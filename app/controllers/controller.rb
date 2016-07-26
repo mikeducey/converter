@@ -26,5 +26,7 @@ MyApp.get "/massconvert" do
 	@mass_calculator = Mass.new(params["mass"], params["massUnit"])
 	@results = @mass_calculator.convertWeightUnits
 	@explanation = @mass_calculator.displayConversion
+	@results2 = @mass_calculator.convertWeightUnitsSecondConversion
+	@explanation2 = @mass_calculator.displayConversionSecondConversion
 	erb :"results"
 end

@@ -91,11 +91,11 @@ class Mass
 
 	def convertWeightUnits
 		if @weightUnit == "pounds"
-			result = (@weight * 0.45359237)
+			result = (@weight * 0.45359237) #pounds to kilograms
 		elsif @weightUnit == "kilograms"
-			result = (@weight * 2.20462)
+			result = (@weight * 2.20462) #kilograms to pounds
 		elsif @weightUnit == "stones"
-			result = (@weight * 14)
+			result = (@weight * 14) #stones to pounds
 		end
 		return (result).round(3)
 	end
@@ -110,5 +110,28 @@ class Mass
 		end
 		return result
 	end
+
+	def convertWeightUnitsSecondConversion
+		if @weightUnit == "pounds"
+			result = (@weight * 0.0714286) #pounds to stones
+		elsif @weightUnit == "kilograms"
+			result = (@weight * 0.157473) #kilograms to stones
+		elsif @weightUnit == "stones"
+			result = (@weight * 6.35029) #stones to kilograms
+		end
+		return (result).round(3)
+	end
+
+	def displayConversionSecondConversion
+		if @weightUnit == "pounds"
+			result =  "You have converted #{@weight} pounds to stones!"
+		elsif @weightUnit == "kilograms"
+			result = "You have converted #{@weight} kilograms to stones!"
+		elsif @weightUnit == "stones"
+			result = "You have converted #{@weight} stones to kilograms!"
+		end
+		return result
+	end
+
 
 end
