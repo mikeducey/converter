@@ -1,0 +1,62 @@
+.container{
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 800px;
+  background: #20293F;
+}
+.conversionBoxContainer {
+	display:flex;
+	justify-content: center;
+
+}
+.title {
+	font-family: 'HelveticaNeue-Light', Arial, Sans-Serif;
+    color: white;
+    font-size:48px;
+    text-align: center;
+   	text-shadow: 4px 4px 4px #000000;
+}
+
+.headings {
+	font-family: 'HelveticaNeue-Light', Arial, Sans-Serif;
+    color: white;
+    font-size:16px;
+    padding-bottom:10px;
+}
+.converterBox{
+	text-align:left;
+	font-family: 'HelveticaNeue-Light', Arial, Sans-Serif;
+	color:white;
+	height:60px;
+	width:180px;
+	font-size:12px;
+	border-radius:8px;
+	padding:20px;
+	text-shadow: 2px 2px 3px #000000;
+	line-height: 1.8;
+	font-weight:lighter;
+}
+.resultsBox {
+	display:flex;
+	justify-content:center;
+	padding-top: 30px;
+}
+.resultsText {
+	text-align:center;
+	font-family: 'HelveticaNeue-Light', Arial, Sans-Serif;
+	color:white;
+	font-weight: bold;
+	font-size:16px;
+	padding:10px;
+}
+.resultsText__number {
+	font-size:34px;
+	text-shadow: 4px 4px 4px #000000;
+}
